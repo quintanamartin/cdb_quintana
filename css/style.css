@@ -1,0 +1,429 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    /* FUENTE */
+    font-family: 'Roboto', sans-serif;
+}
+
+:root{
+    --naranja: rgba(245, 161, 4, 0.986);
+
+}
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+    background-color: rgb(53, 52, 52);
+}
+ /* HEADER */
+header{
+    background-color: var(--naranja); 
+    height: 60px;
+    position:relative;
+    z-index: 1; 
+}
+
+.logo{
+    float: left;
+}
+
+.lista{
+    list-style: none;
+    display: flex;
+    text-align: center;
+}
+
+.lista-items{
+    flex-grow: 1;
+    margin-top: 22px;
+    font-size: 16px;
+}
+
+.lista-items a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    text-transform: uppercase;    
+}
+
+.lista-items a:hover{
+    color: #444;
+}
+
+.desplegable{
+    position: relative;
+}
+
+.login{
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 42px;
+    max-width: 200px;
+    list-style: none;
+    background-color: var(--naranja); 
+    font-size: 15px;  
+    
+}
+.login a{
+    font-size: 12px;
+    padding: 5px;
+}
+
+.login form{
+    font-weight: 600;
+    text-transform: uppercase; 
+    padding: 5px;
+}
+
+.desplegable:hover .login,
+.desplegable:focus-within .login{
+    display: block;
+}
+
+/* CIERRA HEADER 
+COMIENZA BANNER
+*/
+.banner{
+    display: block;
+    width: 100%;
+    height: 400px;
+    position: relative;
+    z-index: 0;
+    
+}
+.banner img{
+    height: 400px;
+    width: 100%;
+    position: absolute;
+}
+
+.texto-banner{
+    background-color: rgba(0, 0, 0, 0.5);
+    color:  var(--naranja);
+    height: 400px;
+
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bold;
+
+    position: relative;
+    z-index: 1;
+    opacity: -1;
+
+    transition: all 2s;
+} 
+
+.texto-banner img{
+    height: 450px;
+}
+
+.texto-banner:hover{
+    opacity: 1;
+}
+.texto-banner img{
+    transform: translate(50px);
+    transition: all 3s;
+} 
+.texto-banner:hover img{
+    transform: translateX(300px);
+    transition: all .5s;
+} 
+
+
+/* CIERRA BANNER
+COMIENDA CONTENIDO
+*/
+
+.contenido{
+    width: 100%;
+}
+
+.nombre-equipo h1{
+    background-color: var(--naranja);
+    text-align: center;
+    padding: 10px;
+}
+
+.logodelequipo{
+    height: 250px;
+    width: 250px;
+    display: block;
+    margin: auto;
+}
+
+.plantilla{
+    width: 100%;
+    margin: 20px 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.plantilla img{
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+}
+
+.miembro{
+    width: 30%;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+    /* border: 1px solid var(--naranja); */
+    border-radius: 5px;
+    color: var(--naranja); 
+}
+
+.miembro p{
+    padding: 5px;
+}
+
+.agregar-boton{
+    padding: 3px;
+}
+
+
+
+
+/* CIERRA CONTENIDO 
+COMIENZA FOOTER */
+footer{
+    height: 70px;
+    display: flex;
+    background-color: var(--naranja);
+    
+}
+
+.derechos{
+    width: 60%;
+    text-align: center;
+    margin-left: 20px;
+}
+
+.derechos p{
+    margin-top: 10px;
+}
+
+.redes-sociales{
+    width: 40%;
+    float: right;
+    text-align: right;
+    margin-right: 20px;
+}
+.redes-sociales img{
+    margin-top: 10px;
+}
+
+.redes-sociales a{
+    text-decoration: none;
+    color: #444;
+    font-weight: 800;
+     
+}
+
+
+
+/* JUGADAS.php */
+
+
+
+.titulo-jugadas{
+    background-color: var(--naranja);
+    text-align: center;
+    padding: 10px;
+}
+.jugadas iframe{
+    margin: 10px auto;
+    display: block;
+}
+
+
+/* REGISTRO.php  */
+
+.formulario{
+    height: 400px;
+    text-align: center;
+    margin: 40px auto;
+}
+
+.registro{
+    width: 80%;
+    background-color: #050109;
+    opacity: 0.75;
+    padding: 40px 0;
+    margin: auto;
+    border: 2px solid var(--naranja);
+    border-radius: 10px;
+}
+
+.campo-form{
+    padding: 10px;
+    border-radius: 5px;
+    width: 60%;
+    margin: 10px 0;
+}
+
+.boton-form{
+    width: 25%;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: var(--naranja);
+    font-weight: bold;
+}
+.boton-form:hover{
+    background-color: #8e23f8;
+    transition: 1s;
+}
+
+
+/* FIXTURE.php */
+
+.fecha{
+    background-color: white;
+    display: flex;
+    height: 80px;
+    margin: 20px 60px;
+    
+}
+
+.fecha:hover .dia-partido{
+   background-color: var(--naranja);
+   color: #444;
+}
+
+
+.titulo-fixture{
+    background-color: var(--naranja);
+    text-align: center;
+    padding: 10px;
+}
+
+time{
+    background-color: #444;
+}
+
+.dia-partido{
+    width: 10% ;
+    text-align: center;
+    color: var(--naranja);
+}
+.dia-partido p{
+    font-size: 35px;
+    font-weight: bold;
+    padding: 5px;
+    
+}
+
+
+.datos-partido{
+    width: 60%;  
+    margin-left: 5px;   
+}
+
+.datos-partido span,p{
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.competencia{
+    color: var(--naranja);
+    padding: 3px;
+}
+
+.vs{
+    color: var(--naranja);
+    
+}
+
+.planilla{
+    width: 30%;
+    
+}
+
+.planilla a{
+    text-decoration: none;
+    justify-content: center;
+    position: relative;
+    top: 30%;
+    left: 35%;
+    
+    padding: 12px;
+    border: 1px solid black;
+    color: var(--naranja);
+    font-weight: bold;
+    background-color: #444;
+}
+
+.planilla a:hover{
+    background-color: var(--naranja);
+   color: #444;
+}
+
+/* ESTADISTICAS.php */
+.tarjeta{
+    width: 70%;
+    border: 2px solid var(--naranja);
+    margin: 10px auto;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+}
+
+.img_estadistica{
+    
+}
+
+
+@media (max-width: 900px){
+    .container {
+        width: 100vw;
+        
+    }
+    
+    .miembro {
+        width: 40%;
+    }
+   
+}
+
+
+@media (max-width: 650px){
+    .container {
+        width: 100vw;
+    }
+
+    .logo{
+        display: none;
+    }
+    
+    header{
+        height: 100vh;
+    }
+    .lista{
+        position: relative;
+        height: 100vh;
+        flex-direction: column;
+    }
+    .banner{
+        display: none;
+    } 
+    
+    .plantilla{
+        width: 100vw;
+        flex-direction: column;
+    }
+    
+    .miembro{
+        width:100vw;
+        text-align: center;
+    }
+   
+
+
+
+}
