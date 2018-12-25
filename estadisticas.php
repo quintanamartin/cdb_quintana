@@ -76,7 +76,7 @@ $resultadogomez = $gomez->fetchAll();
                 <div class="plantilla">
                     <div class="tarjeta">
                         <img src="http://www.a-b-a.com.ar/img/img_2018-07-28_14_12_48.jpg" class="img_estadistica">
-                        <div>
+                        <div class="tarjeta-datos">
                            <h1>Agustin Porris</h1>
                            <table>
                            <tr>
@@ -134,7 +134,7 @@ $resultadogomez = $gomez->fetchAll();
                     </div>
                     <div class="tarjeta">
                         <img src="http://www.a-b-a.com.ar/img/img_2018-07-28_14_13_38.jpg" class="img_estadistica">
-                        <div>
+                        <div class="tarjeta-datos">
                            <h1>Ezequiel Gomez</h1>
                            <table>
                            <tr>

@@ -375,9 +375,27 @@ time{
 }
 
 .img_estadistica{
-    
+    width: 30%;
 }
 
+.tarjeta-datos{
+    width: 70%;
+    margin-left: 20px;
+    margin-top: 30px;
+    color: var(--gris);
+    display: flex;
+}
+.tarjeta-datos h1{
+    text-align: center;
+}
+.tarjeta-datos table{
+    margin: auto;
+}
+
+.tarjeta:hover{
+    background-color: var(--naranja);
+   color: #444;
+}
 
 @media (max-width: 900px){
     .container {
