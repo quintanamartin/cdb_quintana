@@ -15,7 +15,7 @@
             include('header.php');
             ?>
             <!-- Cierra header -->
-            
+            <h1 class="titulo-fixture"> CONTACTO </h1>
             <div class="formulario">
                <form class="registro" method="post" action="enviar.php">
                     

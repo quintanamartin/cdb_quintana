@@ -16,14 +16,21 @@
             include('header.php');
             ?>
             <!-- Cierra header -->
+<!-- Comienza carrusel  -->
+        <div class="slide-container">
+            <div class="slides fade">            
+                <img src="https://i.ibb.co/zGgP0r2/OM1F510.jpg" class="slider-img">                
+            </div>
 
-            <div class="banner">
-                <img src="img/banner2.jpg">
-                <div class="texto-banner">
-                    <img src="img/michael.png">
-                    
-                </div> <!-- Cierra texto-banner -->
-            </div> <!-- Cierra banner --> 
+            <div class="slides fade">
+                <img src="https://i.ibb.co/TvNVwfm/OM1F570.jpg" class="slider-img">
+            </div>
+
+            <div class="slides fade">
+                <img src="https://i.ibb.co/PMjc9VL/OM1F5C0.jpg" class="slider-img"> 
+            </div>  
+        </div>      
+        <!-- Cierra carrusel --> 
             
             
             <div class="contenido">
@@ -165,7 +172,7 @@
             
         </div> <!--  cierra container -->
         
-
+    <script src="js/slider.js"></script>
     </body>
 
 </html>

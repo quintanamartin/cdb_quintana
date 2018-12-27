@@ -25,7 +25,7 @@
                     
                     <input type="password" name="clave" placeholder="Ingresa tu clave" class="campo-form" aria-label="Ingresa tu clave" required> <br>
                     
-                    <input type="submit" name="registrarme" value="Registrarme" required class="boton-form">
+                    <input type="submit" name="registrarme" value="Registrarme"  class="boton-form" required>
 
                     <input type='reset' value='Reset' class="boton-form">
                 </form>

@@ -1,8 +1,17 @@
 <?php ?>
 <!-- Comienza el header -->
             <header class="encabezado">
+           
+
                 <nav class="navbar">
-                    <ul class="lista">
+                    <div id="menuToggle">
+                        <input type="checkbox" class="toggle-check">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    <ul class="lista menu">
+                    
+
                         <li><a href="index.php"><img src="img/logo.png" alt="logo" class="logo"></a></li>
                         <li class="lista-items"><a href="index.php">Plantilla</a></li>
                         <li class="lista-items"><a href="fixture.php">Fixture</a></li>
@@ -28,6 +37,8 @@
                         </ul>  <!-- cierra lista login   -->    
                         <li class="lista-items"><a href="contacto.php">Contacto</a></li>                                 
                     </ul><!--  cierra lista -->
+</div> <!--Cierra toggle -->
                 </nav><!--  cierra navbar -->
+                
             </header> <!-- Cierra el header -->
             <?php ?>

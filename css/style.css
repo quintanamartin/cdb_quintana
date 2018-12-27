@@ -84,6 +84,11 @@ header{
     display: block;
 }
 
+/* BURGER BUTTON */
+.toggle-check{
+    display: none;
+}
+
 /* CIERRA HEADER 
 COMIENZA BANNER
 */
@@ -133,11 +138,38 @@ COMIENZA BANNER
     transform: translateX(300px);
     transition: all .5s;
 } 
-
-
 /* CIERRA BANNER
-COMIENDA CONTENIDO
+COMIENDA CARRUSEL
 */
+/* COMIENZA CARRUSEL */
+.slider-img{
+    height: 500px;
+    width: 100%;
+}
+
+.slide-container{
+    max-width: 1200px;
+    position:relative;
+    margin:auto;
+}
+
+.slides{
+    display:none;
+}
+
+
+.prev:hover, .next:hover{
+    background-color:rgba(0,0,0,0.8);
+}  
+
+.fade{
+    animation-name:fade;
+    animation-duration:1.5s;
+}
+   
+
+/* CIERRA CARRUSEL COMIENZA CONTENIDO */
+
 
 .contenido{
     width: 100%;
@@ -411,37 +443,156 @@ time{
 
 
 @media (max-width: 650px){
-    .container {
-        width: 100vw;
-    }
+/* INDEX */
+.container {
+    width: 100vw;
+}
 
-    .logo{
-        display: none;
-    }
+.logo{
+    display: none;
+}
+
+.desplegable{
+    display: none;
+}
     
-    header{
-        height: 100vh;
-    }
-    .lista{
-        position: relative;
-        height: 100vh;
-        flex-direction: column;
-    }
-    .banner{
-        display: none;
-    } 
-    
-    .plantilla{
-        width: 100vw;
-        flex-direction: column;
-    }
-    
-    .miembro{
-        width:100vw;
-        text-align: center;
-    }
+.toggle-check{
+    display: block;
+}
+
+#menuToggle{
+  display: block;
+  position: relative;
+  top: 50px;
+  left: 50px;
+  
+  z-index: 1;
+  
+  user-select: none;
+}
+
+#menuToggle input{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0;
+  z-index: 2; 
+  
+}
+
+#menuToggle span{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background:rgb(53, 52, 52);
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2){
+  transform-origin: 0% 100%;
+}
+
+
+#menuToggle input:checked ~ span{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: rgb(53, 52, 52);
+}
+
+
+#menuToggle input:checked ~ span:nth-last-child(3){
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+.menu{
+  position: absolute;
+  width: 40vw;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  
+  background: var(--naranja);
+  list-style-type: none;
+  
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+.menu li{
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+
+#menuToggle input:checked ~ ul{
+  transform: none;
+}
    
+.lista{
+    flex-direction: column;
+}
+.banner{
+    display: none;
+} 
+    
+.plantilla{
+    width: 100vw;
+    flex-direction: column;
+}
+    
+.miembro{
+    width:80%;    
+    
+}
+   
+/* FIXTURE */
+.slide-container{
+    display: none;
+}
+.fecha{
+    width: 80vw;
+}
+.dia-partido{
+    width:20%;
+}
+.planilla{
+    display: none;
+}
 
+/* ESTADISTICAS */
+
+.tarjeta{
+    flex-direction: column; 
+}
 
 
 }
