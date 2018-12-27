@@ -1,13 +1,15 @@
 -- phpMyAdmin SQL Dump
--- version 4.5.1
--- http://www.phpmyadmin.net
+-- version 4.8.3
+-- https://www.phpmyadmin.net/
 --
--- Servidor: 127.0.0.1
--- Tiempo de generación: 23-12-2018 a las 20:44:15
--- Versión del servidor: 10.1.16-MariaDB
--- Versión de PHP: 5.6.24
+-- Host: 127.0.0.1
+-- Generation Time: Dec 27, 2018 at 02:24 AM
+-- Server version: 10.1.36-MariaDB
+-- PHP Version: 7.2.11
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
 SET time_zone = "+00:00";
 
 
@@ -17,13 +19,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de datos: `estadisticas2`
+-- Database: `estadisticas`
 --
 
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `jugadores`
+-- Table structure for table `jugadores`
 --
 
 CREATE TABLE `jugadores` (
@@ -33,7 +35,7 @@ CREATE TABLE `jugadores` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Volcado de datos para la tabla `jugadores`
+-- Dumping data for table `jugadores`
 --
 
 INSERT INTO `jugadores` (`id_jugador`, `nombre`, `apellido`) VALUES
@@ -43,7 +45,7 @@ INSERT INTO `jugadores` (`id_jugador`, `nombre`, `apellido`) VALUES
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `partidos`
+-- Table structure for table `partidos`
 --
 
 CREATE TABLE `partidos` (
@@ -58,34 +60,16 @@ CREATE TABLE `partidos` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Volcado de datos para la tabla `partidos`
+-- Dumping data for table `partidos`
 --
 
 INSERT INTO `partidos` (`id_partido`, `id_jugador`, `puntos`, `rebotes`, `asistencias`, `tapas`, `perdidas`, `minutos`) VALUES
 (1, 1, 17, 11, 5, 5, 5, 40),
 (1, 2, 32, 8, 3, 1, 6, 10),
-(2, 1, 40, 5, 2, 1, 0, 30);
-(2, 1, 7, 2, 8, 2, 4, 20);
+(2, 1, 40, 5, 2, 1, 0, 30),
+(2, 2, 8, 15, 3, 0, 8, 25);
+COMMIT;
 
---
--- Índices para tablas volcadas
---
-
---
--- Indices de la tabla `jugadores`
---
-ALTER TABLE `jugadores`
-  ADD PRIMARY KEY (`id_jugador`);
-
---
--- AUTO_INCREMENT de las tablas volcadas
---
-
---
--- AUTO_INCREMENT de la tabla `jugadores`
---
-ALTER TABLE `jugadores`
-  MODIFY `id_jugador` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
