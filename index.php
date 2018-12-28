@@ -17,7 +17,7 @@
             ?>
             <!-- Cierra header -->
             <div class="banner">
-                <img src="img/banner2.jpg">
+                <img src="img/banner2.jpg" alt="banner">
                 <div class="texto-banner">
                     <img src="img/michael.png">
                     
@@ -28,73 +28,73 @@
             <div class="contenido">
                 <div class="nombre-equipo">
                     <h1> PLANTILLA </h1>
-                    <img src="img/dsc.png" class="logodelequipo">    
+                    <img src="img/dsc.png" class="logodelequipo" alt="logodeequipo">    
                 </div>
                 <div class="plantilla">
                     <div class="miembro">
-                        <img src="http://www.a-b-a.com.ar/img/img_2018-07-28_14_15_28.jpg">
+                        <img src="http://www.a-b-a.com.ar/img/img_2018-07-28_14_15_28.jpg" alt="foto_miembro">
                         <p> Número: 10</p>
                         <p> Nombre: Pedro Di Risio</p>
                         <p> Posición: base</p>
                     </div>
                                 
                     <div class="miembro">
-                        <img src="http://www.a-b-a.com.ar/img/img_2018-07-28_14_12_48.jpg">
+                        <img src="http://www.a-b-a.com.ar/img/img_2018-07-28_14_12_48.jpg" alt="foto_miembro">
                         <p> Número: 91</p>
                         <p> Nombre: Agustin Porris</p>
                         <p> Posición: base</p>
                     </div>
 
                     <div class="miembro">
-                        <img src="http://www.a-b-a.com.ar/img/img_2018-07-28_14_13_38.jpg">
+                        <img src="http://www.a-b-a.com.ar/img/img_2018-07-28_14_13_38.jpg" alt="foto_miembro">
                         <p> Número: 15</p>
                         <p> Nombre: Ezequiel Gómez</p>
                         <p> Posición: escolta</p>
                     </div>
 
                     <div class="miembro">
-                        <img src="http://www.a-b-a.com.ar/img/img_2018-07-28_14_14_56.jpg">
+                        <img src="http://www.a-b-a.com.ar/img/img_2018-07-28_14_14_56.jpg" alt="foto_miembro">
                         <p> Número: 7</p>
                         <p> Nombre: Manuel Gayoso</p>
                         <p> Posición: escolta</p>
                     </div>
                     
                     <div class="miembro">
-                        <img src="http://www.a-b-a.com.ar/img/img_2018-07-28_14_13_16.jpg">
+                        <img src="http://www.a-b-a.com.ar/img/img_2018-07-28_14_13_16.jpg" alt="foto_miembro">
                         <p> Número: 20</p>
                         <p> Nombre: Emiliano Soto Quiroga</p>
                         <p> Posición: escolta</p>
                     </div>
 
                     <div class="miembro">
-                        <img src="http://www.a-b-a.com.ar/img/img_2018-07-28_14_15_17.jpg">
+                        <img src="http://www.a-b-a.com.ar/img/img_2018-07-28_14_15_17.jpg" alt="foto_miembro">
                         <p> Número: 11</p>
                         <p> Nombre: Pablo Gayoso</p>
                         <p> Posición: alero</p>
                     </div>
 
                     <div class="miembro">
-                        <img src="http://www.a-b-a.com.ar/img/img_2018-07-28_14_14_43.jpg">
+                        <img src="http://www.a-b-a.com.ar/img/img_2018-07-28_14_14_43.jpg" alt="foto_miembro">
                         <p> Número: 8</p>
                         <p> Nombre: Juan José Perazzo</p>
                         <p> Posición: ala-pivot</p>
                     </div>
 
                     <div class="miembro">
-                        <img src="http://www.a-b-a.com.ar/img/img_2018-07-28_14_13_02.jpg">
+                        <img src="http://www.a-b-a.com.ar/img/img_2018-07-28_14_13_02.jpg" alt="foto_miembro">
                         <p> Número: 4</p>
                         <p> Nombre: David Gómez</p>
                         <p> Posición: ala-pivot</p>
                     </div>
 
                     <div class="miembro">
-                        <img src="http://www.a-b-a.com.ar/img/img_2018-07-28_14_14_05.jpg">
+                        <img src="http://www.a-b-a.com.ar/img/img_2018-07-28_14_14_05.jpg" alt="foto_miembro">
                         <p> Número: 6</p>
                         <p> Nombre: Jorge Calzada</p>
                         <p> Posición: ala-pivot</p>
                     </div>
                     <div class="miembro">
-                        <img src="http://www.a-b-a.com.ar/img/img_2018-07-28_14_15_06.jpg">
+                        <img src="http://www.a-b-a.com.ar/img/img_2018-07-28_14_15_06.jpg" alt="foto_miembro">
                         <p> Número: 14</p>
                         <p> Nombre: Martín Quintana</p>
                         <p> Posición: pivot</p>
