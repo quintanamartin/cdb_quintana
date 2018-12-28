@@ -3,17 +3,16 @@ $usuario=$_POST['usuario'];
 $clave=$_POST['clave'];
 
 //conecto a la bd
-$conexion = mysqli_connect(
+$conectar = mysqli_connect(
    "localhost",
-   "root",
-   "",
-   "registro"
+   "id7065118_coachdebasquet",
+   "1531315439",
+   "id7065118_registro"
 );
-
 
 $consulta="SELECT * FROM usuarios WHERE nombreusuario='$usuario' and clave='$clave'";
 
-$resultado=mysqli_query($conexion, $consulta);
+$resultado=mysqli_query($conectar, $consulta);
 
 $datos=mysqli_num_rows($resultado);
 if ($datos>0){

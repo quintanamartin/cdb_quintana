@@ -1,8 +1,8 @@
 <?php
 //1-CONECTO A BD
-$link = 'mysql:host=localhost;dbname=estadisticas';
-$usuario = 'root';
-$pass = '';
+$link = 'mysql:host=localhost;dbname=id7065118_estadisticas';
+$usuario = 'id7065118_coachdebasquet_1';
+$pass = '1531315439';
 
 try{
    //2-INTENTA ESTO

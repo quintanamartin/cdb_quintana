@@ -18,7 +18,7 @@
 
             
             <div class="formulario">
-                <form class="registro" method="POST" action="recuperar.php">
+                <form class="registro" method="POST" action="">
                     
                     <input type="email" placeholder="Ingresa tu correo electronico" class="campo-form" aria-label="Ingresa tu correo electronico" required> <br>
 

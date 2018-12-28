@@ -13,7 +13,7 @@
 		$cuerpo
 	);
 	
-	$cabeceras = 'From: Mensajes y avisos <contacto@holamundo.com>';
+	$cabeceras = 'From: Mensajes y avisos <contacto@coachdebasquet.com>';
 	
 	mail(
 		$email,
